@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Nadida - Hobi & Karya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffafb;
+      color: #2d3748;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      border-radius: 0 0 3rem 3rem;
+    }
+    .badge-hobi {
+      background-color: #fff;
+      color: #ff6b6b;
+      font-weight: 600;
+      border: 2px dashed #ff6b6b;
+    }
+    .card-proyek {
+      border: 2px solid #ffe3e3;
+      border-radius: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-proyek:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 1rem 2rem rgba(252, 182, 159, 0.3);
+    }
+    .gambar-proyek {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+    .btn-custom {
+      background-color: #ff6b6b;
+      color: white;
+      border-radius: 50rem;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn-custom:hover {
+      background-color: #fa5252;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-danger fs-4" href="#">Portofolio Nadida</a>
+      <button class="navbar-toggler border-0 shadow-none"
+        type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link fw-medium" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link fw-medium" href="#proyek">Karya & Hobi</a></li>
+          <li class="nav-item"><a class="nav-link fw-medium" href="#kontak">Kontak</a></li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <button type="button"
+              class="btn btn-warning fw-semibold px-4 rounded-pill shadow-sm"
+              data-bs-toggle="modal" data-bs-target="#profilModal">
+              Tentang Saya
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- BAGIAN 1: PROFIL -->
+  <header class="hero-section py-5 mb-5 shadow-sm">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="badge badge-hobi px-3 py-2 rounded-pill mb-3 shadow-sm">Selamat datang!</span>
+
+          <h1 class="display-5 fw-bold mb-3 text-dark">
+            Halo, saya
+            <span class="text-danger">Nadida Zarin Mahira</span>
+          </h1>
+
+          <p class="text-muted lead mb-4" style="font-size: 15px;">
+            Saya mahasiswa Informatika, saat ini masih semester tiga yang memiliki minat pada dunia
+            menggambar, desain, dan saat ini saya masih belajar pemrograman.
+            Saya senang mencoba hal baru dan mengembangkan keterampilan melalui kegiatan yang saya sukai.
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+            <a href="#proyek" class="btn btn-custom shadow-sm">
+              Lihat Karya &rarr;
+            </a>
+            <a href="#kontak"
+            class="btn btn-light text-dark fw-semibold px-4 rounded-pill shadow-sm border d-flex align-items-center justify-content-center gap-2">
+            Kirim Pesan
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="img/WhatsApp Image 2026-10-21 at 15.11.57.jpeg"
+            alt="Foto profil Nadida"
+            class="rounded-circle shadow-lg border border-5 border-white object-fit-cover"
+            style="width: 270px; height: 270px;">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- BAGIAN 2: KARYA DAN HOBI -->
+  <section id="proyek" class="container py-4 mb-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mt-2">Karya dan Hobi</h2>
+      <p class="text-muted small">Beberapa karya dan kegiatan yang saya minati.</p>
+    </div>
+    <div class="row g-4">
+      <!-- KARTU 1: DESAIN POSTER -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-proyek h-100 bg-white p-3 shadow-sm">
+          <img src="img/WhatsApp Image 2026-10-23 at 14.59.07.jpeg"
+            class="card-img-top rounded-4 gambar-proyek"
+            alt="Karya desain poster">
+
+          <div class="card-body">
+            <span class="badge bg-danger-subtle text-danger mb-2">Art & Drawing</span>
+            <h5 class="card-title fw-bold">Desain Poster</h5>
+            <p class="card-text text-muted small">
+              Saya suka membuat ilustrasi dan poster untuk
+              menyampaikan pesan melalui gambar (walaupun belum jago banget haha).
+            </p>
+            <a href="#kontak" class="btn btn-outline-danger btn-sm rounded-pill w-100 mt-2">Lihat Kontak</a>
+          </div>
+        </div>
+      </div>
+      <!-- KARTU 2: MENYANYI -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-proyek h-100 bg-white p-3 shadow-sm">
+          <img src="img/i love spotify.jpe" class="card-img-top rounded-4 gambar-proyek" alt="Hobi menyanyi">
+          <div class="card-body">
+            <span class="badge bg-primary-subtle text-primary mb-2">Hobi Musik</span>
+            <h5 class="card-title fw-bold">Mendengarkan musik & Menyanyi</h5>
+
+            <p class="card-text text-muted small">
+              Menyanyi menjadi salah satu kegiatan yang saya
+              nikmati dan sering saya lakukan tanpa sadar.
+            </p>
+
+            <a href="#kontak" class="btn btn-outline-primary btn-sm rounded-pill w-100 mt-2"> Kirim pesan ke saya</a>
+          </div>
+        </div>
+      </div>
+      <!-- KARTU 3: PEMROGRAMAN WEB -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-proyek h-100 bg-white p-3 shadow-sm">
+          <img src="img/download (7).jpe"
+            class="card-img-top rounded-4 gambar-proyek"
+            alt="Pengembangan web">
+
+          <div class="card-body">
+            <span class="badge bg-warning-subtle text-dark mb-2">Coding & Web</span>
+            <h5 class="card-title fw-bold">Pengembangan Web</h5>
+
+            <p class="card-text text-muted small">
+              Saat ini saya masih belajar membuat halaman web dan
+              mengembangkan kemampuan pemrograman.
+            </p>
+
+            <a href="#kontak" class="btn btn-outline-warning text-dark btn-sm rounded-pill w-100 mt-2">Lihat Kontak</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BAGIAN 3: FORM KONTAK -->
+  <section id="kontak" class="container py-4 mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="card border-0 rounded-4 shadow-sm p-4 p-md-5 bg-white" style="border: 2px dashed #ffb3b3 !important;">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold mt-2">Kirim Pesan</h2>
+            <p class="text-muted small">Silakan isi formulir ini untuk mengirim pertanyaan atau pesan.</p>
+          </div>
+
+          <form id="contactForm" onsubmit="validateForm(event)" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold small">Nama</label>
+              <input type="text" class="form-control rounded-pill px-3 bg-light border-0" id="name" placeholder="Masukkan nama">
+              <div id="nameError" class="text-danger small mt-1 d-none">Nama tidak boleh kosong.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold small">Email</label>
+              <input type="email" class="form-control rounded-pill px-3 bg-light border-0" id="email" placeholder="kamu@email.com">
+              <div id="emailError" class="text-danger small mt-1 d-none"> Masukkan email dengan format yang benar.</div>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label fw-semibold small">Pesan </label>
+              <textarea
+                class="form-control rounded-4 p-3 bg-light border-0"
+                id="message" rows="3"
+                placeholder="Tulis pesan (minimal 10 karakter)"></textarea>
+
+              <div id="messageError" class="text-danger small mt-1 d-none">Pesan minimal 10 karakter.</div>
+             </div>
+
+            <button type="submit"
+              class="btn btn-custom w-100 py-2 rounded-pill shadow-sm">
+              Kirim Pesan
+            </button>
+            <div id="successMsg" class="alert alert-success mt-3 text-center rounded-3 d-none mb-0" role="alert">Pesan berhasil divalidasi.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="text-center py-4 text-muted small bg-white border-top">
+    <p class="mb-0">Portofolio Nadida Zarin Mahira &copy; 2026</p>
+  </footer>
+<!-- BAGIAN 4: POPUP BIODATA -->
+<div class="modal fade" id="profilModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content rounded-4 border-0 shadow-lg p-3">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold text-danger">Biodata Saya</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <img src="img/WhatsApp Image 2026-10-21 at 15.11.57.jpeg"
+            alt="Foto Nadida"
+            class="rounded-circle shadow-sm border border-3 border-white object-fit-cover"
+            style="width: 120px; height: 120px;">
+
+          <h5 class="fw-bold mt-3 mb-1">Nadida Zarin Mahira</h5>
+          <p class="text-muted small mb-0">Mahasiswa</p>
+        </div>
+
+        <div class="bg-light rounded-4 p-3">
+          <div class="row mb-3">
+            <div class="col-5 text-muted small">Nama Lengkap</div>
+            <div class="col-7 fw-medium small">Nadida Zarin Mahira</div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-5 text-muted small">Tempat, Tanggal Lahir</div>
+            <div class="col-7 fw-medium small">Majene, 31 Mei 2007</div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-5 text-muted small">Asal</div>
+            <div class="col-7 fw-medium small">Majene | Tinambung</div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-5 text-muted small">Perguruan Tinggi</div>
+            <div class="col-7 fw-medium small">Universitas Sulawesi Barat</div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-5 text-muted small">Program Studi</div>
+            <div class="col-7 fw-medium small">Informatika</div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-5 text-muted small">Hobi</div>
+            <div class="col-7 fw-medium small">Menggambar, menyanyi</div>
+          </div>
+
+          <div class="row">
+            <div class="col-5 text-muted small">Instagram</div>
+            <div class="col-7 fw-medium small">@zarinmhira</div>
+          </div>
+        </div><p class="text-muted small text-center mt-3 mb-0">sekian</p></div>
+
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button"
+          class="btn btn-dark px-5 rounded-pill fw-medium"
+          data-bs-dismiss="modal">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
